@@ -9359,7 +9359,7 @@ static jlong NativeCrypto_SSL_get1_session(JNIEnv* env, jclass, jlong ssl_addres
 #define REF_EVP_PKEY_CTX "L" TO_STRING(JNI_JARJAR_PREFIX) "org/conscrypt/NativeRef$EVP_PKEY_CTX;"
 #define REF_HMAC_CTX "L" TO_STRING(JNI_JARJAR_PREFIX) "org/conscrypt/NativeRef$HMAC_CTX;"
 #define REF_BIO_IN_STREAM "L" TO_STRING(JNI_JARJAR_PREFIX) "org/conscrypt/OpenSSLBIOInputStream;"
-static JNINativeMethod sNativeCryptoMethods[] = {
+static const JNINativeMethod sNativeCryptoMethods[] = {
         CONSCRYPT_NATIVE_METHOD(NativeCrypto, clinit, "()V"),
         CONSCRYPT_NATIVE_METHOD(NativeCrypto, EVP_PKEY_new_RSA, "([B[B[B[B[B[B[B[B)J"),
         CONSCRYPT_NATIVE_METHOD(NativeCrypto, EVP_PKEY_new_EC_KEY, "(" REF_EC_GROUP REF_EC_POINT "[B)J"),
