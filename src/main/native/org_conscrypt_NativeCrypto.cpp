@@ -11040,7 +11040,7 @@ static jlong NativeCrypto_getDirectBufferAddress(JNIEnv *env, jclass, jobject bu
 #define REF_EVP_CIPHER_CTX "L" TO_STRING(JNI_JARJAR_PREFIX) "org/conscrypt/NativeRef$EVP_CIPHER_CTX;"
 #define REF_EVP_PKEY "L" TO_STRING(JNI_JARJAR_PREFIX) "org/conscrypt/NativeRef$EVP_PKEY;"
 #define REF_HMAC_CTX "L" TO_STRING(JNI_JARJAR_PREFIX) "org/conscrypt/NativeRef$HMAC_CTX;"
-static JNINativeMethod sNativeCryptoMethods[] = {
+static const JNINativeMethod sNativeCryptoMethods[] = {
     NATIVE_METHOD(NativeCrypto, clinit, "()Z"),
     NATIVE_METHOD(NativeCrypto, ENGINE_load_dynamic, "()V"),
     NATIVE_METHOD(NativeCrypto, ENGINE_by_id, "(Ljava/lang/String;)J"),
